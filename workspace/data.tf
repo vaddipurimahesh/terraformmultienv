@@ -1,6 +1,6 @@
 data "aws_ami" "godevops" {
   most_recent = true
-  owners = ["973714476881"]
+  owners = ["763253191880"]
 
   filter {
     name = "name"
