@@ -1,6 +1,6 @@
 resource "aws_instance" "delivery" {
   ami = local.ami_id
-  instance_type = loookup(var.instance_type,local.environment)
+  instance_type = lookup(var.instance_type,local.environment)
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
 
   tags = {
