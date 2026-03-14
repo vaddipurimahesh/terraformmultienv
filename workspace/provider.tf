@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "goevops-s3"
+    bucket = "devops-daws-s3"
     key = "godevops-workspace"
     region = "us-east-1"
     encrypt = true
