@@ -8,10 +8,10 @@ data "aws_ami" "godevops" {
   }
   filter {
     name = "root-device-type"
-    values = "ebs"
+    values = ["ebs"]
   }
   filter {
     name = "virtualization-type"
-    values = "hvm"
+    values = ["hvm"]
   }
 }
